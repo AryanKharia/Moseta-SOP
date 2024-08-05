@@ -1,9 +1,9 @@
 .inventoryCardBody
 {
-    height: 10rem;
-    min-width: 30rem;
+    min-height: 7rem;
+    width: 30rem;
     background-color: white;
-    border-radius: 1.6rem;
+    border-radius: 0.6rem;
     cursor: pointer;
     
     position: relative;
@@ -11,34 +11,30 @@
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.349);
 }
 
-.inventoryCardBody:hover > .inventoryCardName
-{
-    background: linear-gradient(rgba(0, 0, 0, 0.26), transparent);
-    transition: all 0.2s ease;
-}
-
 .inventoryCardName
 {
-    background: linear-gradient(rgba(0, 0, 0, 0), transparent);
+    background-color: var(--main_theme);
     padding: 1rem;
     overflow: hidden;
     width: 100%;
-    height: 2rem;
-    top: 0;
-    position: absolute;
-    font-size: 1rem;
-    font-weight: normal;
+    height: 1.8rem;
+    background-color: black;
+    color: white;
+
+    font-size: 1.1rem;
+    font-weight: 500;
     transition: all 0.2s ease;
 }
 
 .inventoryCardBody > h2
 {
-    background-color: var(--secondary_color);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.24);
+    color: rgb(0, 0, 0);
     width: max-content;
     height: 0.5rem;
     bottom: 0;
-    border-top-right-radius: 1.6rem;
+    backdrop-filter: blur(5px);
+    border-top-right-radius: 0.6rem;
     padding-bottom: 1.2rem;
     padding-right: 1rem;
     padding-left: 1rem;
@@ -46,4 +42,26 @@
     position: absolute;
     font-size: 1rem;
     font-weight: normal;
+}
+
+.inventoryCardImageContainer
+{
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventoryCardImage
+{
+    height: 100%;
+    transition: all 0.3s ease;
+}
+.inventoryCardBody:hover .inventoryCardImage
+{
+    height: 110%;
+    transition: all 0.3s ease;
 }

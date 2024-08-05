@@ -1,5 +1,7 @@
 .sideBarHomePageBody
 {
     min-height: 100svh;
-    background-color: yellow;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #faffb5 100%);
+
 }
