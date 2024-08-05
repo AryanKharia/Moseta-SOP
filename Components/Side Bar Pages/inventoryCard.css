@@ -8,29 +8,32 @@
     
     position: relative;
     overflow: hidden;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.349);
 }
 
-.inventoryCardBody:hover
+.inventoryCardBody:hover > .inventoryCardName
 {
-
+    background: linear-gradient(rgba(0, 0, 0, 0.26), transparent);
+    transition: all 0.2s ease;
 }
 
-.inventoryCardBody > h1
+.inventoryCardName
 {
+    background: linear-gradient(rgba(0, 0, 0, 0), transparent);
     padding: 1rem;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.26), transparent);
     width: 100%;
     height: 2rem;
     top: 0;
     position: absolute;
     font-size: 1rem;
     font-weight: normal;
+    transition: all 0.2s ease;
 }
 
 .inventoryCardBody > h2
 {
-    background-color: black;
+    background-color: var(--secondary_color);
     color: white;
     width: max-content;
     height: 0.5rem;

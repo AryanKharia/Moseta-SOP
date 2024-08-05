@@ -10,17 +10,19 @@ const SideBarInventoryPage = () => {
 
   return (
     <div className='sideBarInventoryPageBody'>
-        {
-            products.map((ele, key) => {
-                return (
-                    <div>
-                        {
-                            <InventoryCard productName={products[key]} quantity={quantity[key]} image={image[key]}/>
-                        }
-                    </div>
-                )
-            })
-        }
+        <div className='sideBarInventoryCardContainer'>
+            {
+                products.map((ele, key) => {
+                    return (
+                        <div>
+                            {
+                                <InventoryCard productName={products[key]} quantity={quantity[key]} image={image[key]}/>
+                            }
+                        </div>
+                    )
+                })
+            }
+        </div>
     </div>
   )
 }

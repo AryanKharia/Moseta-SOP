@@ -7,10 +7,10 @@ const InventoryCard = ({productName, quantity, image}) => {
         <div className='inventoryCardImage'>
             <img src="" alt="" />
         </div>
-        <h1>{productName}</h1>
+        <h1 className='inventoryCardName'>{productName}</h1>
         <h2>Quantity : {quantity}</h2>
     </div>
   )
 }
 
-export default InventoryCard
+export default InventoryCard;

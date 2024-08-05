@@ -1,20 +1,25 @@
 .sideBarInventoryPageBody
 {
-    height: 90svh;
+    height: 100svh;
     width: 100%;
-    /* border: 1px solid green; */
-    
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    
+    align-items: center;
+}
+
+.sideBarInventoryCardContainer
+{
+    /* background-color: rebeccapurple; */
+    height: 90svh;
+    padding: 1rem 0;
     overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .sideBarInventoryPageBody::-webkit-scrollbar
 {
     width: 5px;
-    background-color: red;
-    color: white;
+    background-color: green;
 }
