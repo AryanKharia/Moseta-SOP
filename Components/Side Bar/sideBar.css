@@ -1,0 +1,159 @@
+.sideBarContainer
+{
+    background-color: rgb(230, 230, 230);
+    width: 17rem;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sideBarBody
+{
+    /* background-color: violet; */
+    height: 100%;
+    display: flex;
+}
+
+.sideBarLogoContainer
+{
+    /* background-color: blue; */
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(124, 124, 124);
+    margin-bottom: 1rem;
+}
+
+.sideBarLogo
+{
+    font-size: 1.5rem;
+}
+
+.sideBarBtnContainer
+{
+    /* background-color: green; */
+    /* padding-top: 2rem; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+}
+
+.sideBarButton
+{
+    user-select: none;
+    cursor: pointer;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideBarButton:hover
+{
+    font-weight: 500;
+}
+
+.sideBarSelectBtnChild
+{
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    width: calc(100% - 5px);
+    height: 3rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 5px solid rgb(99, 182, 250);
+    transition: all 0.2s ease, background-color 0s ease;
+}
+
+.sideBarUnselectBtn
+{
+    cursor: pointer;
+    font-weight: normal;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color: green; */
+    transition: all 0.2s ease, background-color 0s ease;
+}
+
+.sideBarMainComponent
+{
+    min-height: 100svh;
+    width: 100%;
+    /* background-color: rgb(255, 0, 0); */
+}
+
+.sideBarBtnChildIcon
+{
+    margin-left: 3rem;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.sideBarBtnChildName
+{
+    width: 80%;
+}
+
+.sideBarSearch
+{
+    /* border: 1px solid green; */
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideBarInputComponent
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sideBarInputComponent > input
+{
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 4rem;
+    border-radius: 4rem;
+    padding: 0rem 2rem;
+    padding-left: 4rem;
+}
+
+.sideBarSearchIcon
+{
+    font-size: 2rem;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    color: rgb(102, 102, 102);
+}
+
+.sideBarDealerCodeComponent
+{
+    height: 20%;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.sideBarDealerCodeComponent > h1
+{
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}

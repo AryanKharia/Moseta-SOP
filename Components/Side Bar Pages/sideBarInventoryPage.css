@@ -1,0 +1,20 @@
+.sideBarInventoryPageBody
+{
+    height: 90svh;
+    width: 100%;
+    /* border: 1px solid green; */
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    
+    overflow-y: scroll;
+}
+
+.sideBarInventoryPageBody::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: red;
+    color: white;
+}
