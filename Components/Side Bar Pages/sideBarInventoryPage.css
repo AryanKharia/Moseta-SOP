@@ -1,17 +1,17 @@
 .sideBarInventoryPageBody
 {
     height: 100svh;
-    width: 100%;
+    width: calc(100svw - 17rem);
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .sideBarInventoryCardContainer
 {
     /* background-color: rebeccapurple; */
-    height: 90svh;
+    height: max-content;
     padding: 1rem 0;
-    overflow-y: scroll;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -21,5 +21,86 @@
 .sideBarInventoryPageBody::-webkit-scrollbar
 {
     width: 5px;
-    background-color: green;
+    /* background-color: green; */
+}
+
+.sideBarInventoryCategoryContainer
+{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    width: 90%;
+    /* border: 1px solid blue; */
+}
+
+.sideBarInventoryCategorySlider::-webkit-scrollbar
+{
+    width: 0;
+    height: 0;
+}
+
+.sideBarInventoryCategorySlider
+{
+    display: flex;
+    gap: 20px;
+    min-height: 300px;
+    padding: 0 10px;
+    border-bottom: 1px solid rgb(148, 148, 148);
+    overflow: scroll;
+}
+
+.sideBarInventoryCategoryContainer::-webkit-scrollbar
+{
+    height: 0;
+    width: 0;
+}
+
+.categoryCards
+{
+    user-select: none;
+    /* height: 400px; */
+    
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 1px solid green; */
+}
+.categoryCards > h1
+{
+    margin-top: 1rem;
+    height: 100px;
+    /* border: 1px solid blue; */
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: flex;
+    text-align: center;
+}
+
+.cateogryImage
+{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid rgb(180, 180, 180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.171);
+}
+
+.cateogryImage:hover > img
+{
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.cateogryImage > img
+{
+    height: 90%;
+    transition: all 0.2s ease;
 }
